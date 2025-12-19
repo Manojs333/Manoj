@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio | AI & DS Student</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background-color: #0f172a;
+      color: #e5e7eb;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #020617;
+      padding: 15px 30px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav h1 {
+      color: #38bdf8;
+      font-size: 22px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #e5e7eb;
+      font-size: 16px;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #38bdf8;
+    }
+
+    section {
+      padding: 100px 30px 60px;
+      min-height: 100vh;
+    }
+
+    .home {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .home h2 {
+      font-size: 36px;
+      margin-bottom: 10px;
+      color: #38bdf8;
+    }
+
+    .home p {
+      font-size: 18px;
+      max-width: 600px;
+    }
+
+    .title {
+      font-size: 28px;
+      color: #38bdf8;
+      margin-bottom: 20px;
+    }
+
+    .card {
+      background: #020617;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .skills span {
+      display: inline-block;
+      background: #1e293b;
+      padding: 8px 14px;
+      border-radius: 20px;
+      margin: 6px;
+      font-size: 14px;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 6px;
+      border: none;
+      outline: none;
+    }
+
+    form button {
+      padding: 10px 20px;
+      border: none;
+      background: #38bdf8;
+      color: #020617;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #020617;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <h1>Manoj</h1>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="home">
+    <h2>Hello, I'm Manoj</h2>
+    <p>Second-year B.Tech Artificial Intelligence & Data Science student passionate about AI, data analysis, and building smart applications.</p>
+  </section>
+
+  <section id="about">
+    <h2 class="title">About Me</h2>
+    <div class="card">
+      <p>I am Manoj, a second-year B.Tech student specializing in Artificial Intelligence and Data Science. I am actively learning machine learning, data analysis, and AI tools to solve real-world problems.</p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2 class="title">Projects</h2>
+    <div class="card">AI Mini Project – Student Performance Analysis</div>
+    <div class="card">Portfolio Website using HTML, CSS & JavaScript</div>
+    <div class="card">Data Visualization using Python</div>
+  </section>
+
+  <section id="skills">
+    <h2 class="title">Skills</h2>
+    <div class="skills">
+      <span>Python</span>
+      <span>Machine Learning</span>
+      <span>Data Analysis</span>
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+      <span>AI Tools</span>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 class="title">Contact</h2>
+    <div class="card">
+      <p><strong>Name:</strong> Manoj</p>
+      <p><strong>Email:</strong> manoj100500ss@gmail.com</p>
+      <p><strong>Mobile:</strong> 9361328874</p>
+      <br />
+      <form onsubmit="sendMessage(event)">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 | AI & Data Science Student Portfolio
+  </footer>
+
+  <script>
+    function sendMessage(event) {
+      event.preventDefault();
+      alert("Message sent successfully! (Demo)");
+    }
+  </script>
+
+</body>
+</html>
